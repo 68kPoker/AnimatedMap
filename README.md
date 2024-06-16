@@ -41,6 +41,8 @@ a given place it is not updated there.
 Map can be scrolled <b>smoothly</b> using the "shift in place" method like the one mentioned 
 above. Once moved by increment greater or equal `16` pixels, the map is updated.
 
+The tiles that were shifted in place can be then merged with static mask in `A` or `C` channel.
+
 Static objects are then inserted using first/last word mask.
 
 The movable objects are drawn always, when moved or when the tile background 
