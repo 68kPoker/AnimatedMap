@@ -23,6 +23,8 @@ graphics organisation. The width and height is then specified in tiles.
 The movable object background is stored as tiles. So the multiple object in 
 one place are stored once.
 
+The movable objects are shifted "in place" for easy tile clipping.
+
 Map (chamber) is scrolled by multiplication of 16 pixels in any direction.
 
 The scrolling is done using tile update. If same tile was already drawn in 
