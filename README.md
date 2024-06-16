@@ -38,6 +38,11 @@ Map (chamber) is scrolled by multiplication of `16` pixels in any direction.
 The scrolling is done using tile update. If same tile was already drawn in 
 a given place it is not updated there.
 
+Map can be scrolled <b>smoothly</b> using the "shift in place" method like the one mentioned 
+above. Once moved by increment greater or equal `16` pixels, the map is updated.
+
+Static objects are then inserted using first/last word mask.
+
 The movable objects are drawn always, when moved or when the tile background 
 nearby was affected by static or movable object.
 
